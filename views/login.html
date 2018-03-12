@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Well Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+  <style>
+    body {
+      padding-top: 80px;
+      background-image: url("./assets/images/login.jpg");
+      background-size: cover;
+      font-family: 'Exo', serif;
+      font-size: 20px;
+    }
+    
+    #topbar {
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header id="topbar" class="row">
+      <div class="col-10">
+        <div>welcome to WELLSENT.io</div>
+      </div>
+      <div class="col-2">
+        <button id="topbarStuff" class="btn btn-warning btn-lg"> <a href="/signup">Sign up</a></button>
+
+      </div>
+    </header>
+
+    <div class="col-sm-6 col-sm-offset-3">
+      <h2 id="contentTitle">Login</h2>
+      <!-- LOGIN FORM -->
+      <form>
+        <div class="form-group">
+          <label>Username</label>
+          <input id="loginUsername" type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input id="loginPwd" type="password" class="form-control" name="password">
+        </div>
+        <button id="loginButton" type="submit" class="btn btn-warning btn-lg">Login</button>
+      </form>
+      <hr>
+      <p>Need an account? <a href="/signup">Signup</a></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./assets/js/authenticationScript.js"></script>
+</body>
+<html>

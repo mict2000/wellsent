@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WELLSENT.io</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/blaze.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/blaze/dist/blaze.colors.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+  <style>
+    body {
+      font-family: 'Exo', serif;
+      font-size: 20px;
+    }
+    
+     ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search Users</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+        </div>
+        <div id="search-results" class="modal-body"></div>
+        <div class="modal-footer">
+          <input id="search-input" type="" name="">
+          <button type="button" class="btn btn-secondary" id='search-users-btn'>Search</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id='close-btn'>Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Body -->
+  <div class="container-fluid">
+    <header id="topbar" class="row">
+      <ul class="c-nav c-nav--inline">
+        <!-- <li class="c-nav__item"><i class="fas fa-home"></i> Home</li>
+                <li class="c-nav__item"><i class="fas fa-star"></i> News</li> -->
+        <li class="c-nav__item">WELLSENT.io</li>
+        <!-- <a href="/logout"></a> -->
+
+        <li class="c-nav__item c-nav__item--right"><i class="fas fa-user"></i>
+          <a href="/logout">
+            <button class="btn btn-warning btn-lg">Logout</button>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <div id="content-row" class="row">
+      <div id="sidebar" class="col-2">
+        <span id="username-display"></span>
+        <div id="user-search-area" class="row">
+          <!-- <div class="u-center-block"> -->
+          <button id="open-search-btn" type="button" class="c-button c-button--rounded c-button--ghost">Search for Users</button>
+          <!-- </div> -->
+        </div>
+        <div id="conversation-pool-area" class="row">
+          <h3 id="conversations-header">Conversations</h3>
+          <input id="conversation-filter" type="" name="" placeholder="filter">
+          <ul id="pool-list" class="c-nav">
+            <!-- Message Pools go here -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-10">
+        <div id='displayed-users' style='text-align: center;'>Search for a new user or continue your old chats!</div>
+        <div id="message-area" class="row" style='overflow: hidden;'>
+          <div class="c-card" style="overflow-y: scroll;">
+            <div id="displayed-messages" class="c-card__body">
+              <!-- <div style='text-align: center;'></div> -->
+            </div>
+          </div>
+        </div>
+        <div id="input-row" class="row">
+          <div id="input-area" class="col-10">
+            <br>
+            <div class="o-panel-container" style="height: 100%">
+              <div class="o-panel">
+                <input id="message-input" class="c-field u-super" placeholder="Message Here...." type="text">
+              </div>
+            </div>
+          </div>
+          <div id="send-area" class="col-2">
+            <div class="u-center-block__content">
+              <button id='send-btn' type="button" class="c-button c-button--ghost-brand">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/mainPageScript.js"></script>
+</body>
+
+</html>

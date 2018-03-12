@@ -1,0 +1,127 @@
+body {
+  /*background-color: black;*/
+}
+
+.c-nav {
+  height: 100%;
+  background-color: black;
+}
+
+button {
+  margin: auto;
+}
+
+.container-fluid {
+	max-height: 90%;
+}
+
+#singin-height {
+  width: 25%;
+  height: 25%;
+}
+
+#topbar {
+	height: 7%;
+}
+
+.content-row {
+  height: 100%;
+}
+
+
+/*Login Page*/
+
+.form-container {
+  text-align: center;
+  padding: 30px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 10%;
+}
+
+
+/*Main Page*/
+
+#content-row {
+  height: 650px;
+}
+
+#sidebar {
+  min-height: wrap;
+}
+
+#user-search-area {
+  height: 10%;
+  /*	border-bottom: 1px solid black;
+*/
+}
+
+#open-search-btn {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+
+.search-result {
+  cursor: pointer;
+}
+
+#conversation-pool-area {
+  margin-top: 10px;
+}
+
+#conversations-header {
+  margin: auto;
+}
+
+#conversation-filter {
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.conversation-tab {
+  cursor: pointer;
+}
+
+#message-area {
+  height: 77%;
+  flex-wrap: wrap;
+}
+
+#displayed-users {
+  font-size: 40px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+}
+
+.c-bubble {
+  width: 200px;
+  margin-bottom: 10px;
+  color: #a2c0ef;
+  /*overflow: auto;*/
+}
+
+.c-bubble--left {
+  margin-left: 1046px;
+}
+
+.c-bubble--right {
+  margin-left: 15px;
+}
+
+#input-row {
+  height: 20%;
+  bottom: 0;
+  text-align: center;
+}
+
+#user-input-box {
+  width: 90%;
+  height: 70%;
+}
+
+#send-area {}

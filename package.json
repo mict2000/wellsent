@@ -1,0 +1,35 @@
+{
+  "name": "wellsent",
+  "version": "1.0.0",
+  "description": "secure messaging app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwactor/wellsent.git"
+  },
+  "author": "nwactor, hmalle, yiyi098, ymekias1223, mict2000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwactor/wellsent/issues"
+  },
+  "homepage": "https://github.com/nwactor/wellsent#readme",
+  "dependencies": {
+    "base-conversion": "^3.3.0",
+    "binary-to-string": "^0.1.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.35.2",
+    "sha.js": "^2.4.10",
+    "string-to-binary": "^0.1.2",
+    "validate.io-binary-string": "^1.0.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
